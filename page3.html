@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Set title of web page -->
+    <title>Animated Table</title>
+    <title>The most amazing 3 page website</title>
+    <style>
+
+/* Style tab links */
+.tablink {
+  background-color: #0a0a0a;
+  color: white;
+  float: middle;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 17px;
+  font-size: 17px;
+  width: 30%;
+}
+
+.tablink:hover {
+  background-color: #a50000;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: rgb(29, 27, 27);}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica", sans-serif;
+        background: rgb(163, 28, 1);
+        background: -moz-linear-gradient(
+          -45deg,
+          rgb(200, 43, 0) 0%,
+          rgb(0, 0, 0) 100%
+        );
+        background: -webkit-linear-gradient(
+          -45deg,
+          rgb(165, 29, 2) 0%,
+          rgb(0, 0, 0) 100%
+        );
+        background: linear-gradient(
+          135deg,
+          rgb(119, 20, 0) 0%,
+          rgb(6, 0, 8) 100%
+        );
+      }
+
+      h1 {
+        font-size: 24px;
+        margin: 10px 0 0 0;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #eeeeee;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        font-style: italic;
+
+        color: #f9f5f5;
+      }
+
+      wx {
+        font-size: 10px;
+        font-weight: light;
+        font-style: italic;
+
+        color: #f9f5f5;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+
+        color: #f9f5f5;
+      }
+
+      span a {
+        font-size: 18px;
+        color: #cccccc;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+          transform: translatey(0px);
+        }
+      }
+
+      .container2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+      }
+
+      .avatar {
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 5px white solid;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .content {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .suppoprt-me {
+        display: inline-block;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 20vw;
+        max-width: 250px;
+        min-width: 200px;
+        z-index: 9;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <a href="index.html"
+      >
+  <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+  <a href="page2.html"
+      >
+<button class="tablink" onclick="openPage('Statist', this, 'green')" id="defaultOpen">Statistics</button>
+<a href="page3.html"
+      >
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Classified footage</button>
+
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is within his soul..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>Statistics</h3>
+  <p>One of the most dangerous Sorcerers to date</p>
+</div>
+
+<div id="Classified footage" class="tabcontent">
+  <h3>Classified footage</h3>
+  <p>His rampages...</p>
+</div>
+
+
+</div>
+  <!--html fro image and button-->
+    <!--html for floating spinny thingy-->
+    <div class="container">
+      <div class="square black">
+        <div class="square">
+          <div class="square black">
+            <div class="square">
+              <div class="square black">
+                <div class="square">
+                  <div class="square black">
+                    <div class="square">
+                      <div class="square black">
+                        <div class="square">
+                          <div class="square black">
+                            <div class="square">
+                              <div class="square black">
+                                <div class="square">
+                                  <div class="square black">
+                                    <div class="square">
+                                      <div class="square black">
+                                        <div class="square">
+                                          <div class="square black">
+                                            <div class="square">
+                                              <div class="square black">
+                                                <div class="square">
+                                                  <div class="square black">
+                                                    <div class="square">
+                                                      <div class="square black">
+                                                        <div class="square">
+                                                          <div
+                                                            class="square black"
+                                                          >
+                                                            <div class="square">
+                                                              <div
+                                                                class="square black"
+                                                              ></div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--html for floating icon-->
+    <div class="container2">
+      <div class="avatar" className = "py-8">  
+
+        </a href="https://jujutsu-kaisen.fandom.com/wiki/Sukuna">
+        <img src="images (1).jpeg" alt="Skytsunami" />
+        </a>
+      </div>
+      <div class="content">
+        <h1>Ryomen Sukuna</h1>
+        <p>"The King of curses"</p>
+    
+    <h2>Footage of the Shibuya incident</h2>
+    <video width="500px" 
+           height="400px" 
+           controls="controls">
+        <source src=
+"https://www.youtube.com/watch?v=sCG7D4wy7Fg" 
+                type="video/mp4" />
+    </video>
+    <!--html for floating icon-->
+  </body>
+</html>
